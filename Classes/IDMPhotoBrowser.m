@@ -13,9 +13,6 @@
 
 // Private
 @interface IDMPhotoBrowser () {
-	// Data
-    NSMutableArray *_newPhotos;
-    
 	// Views
 	UIScrollView *_pagingScrollView;
 	
@@ -45,9 +42,6 @@
     
     // Appearance
     UIStatusBarStyle _previousStatusBarStyle;
-    
-    // Present
-    UIView *_senderViewForAnimation;
     
     // Misc
     BOOL _performingLayout;
@@ -180,23 +174,6 @@
 {
     if ((self = [self init])) {
 		_newPhotos = [[NSMutableArray alloc] initWithArray:photosArray];
-        _senderViewForAnimation = view;
-	}
-	return self;
-}
-
-- (id)initWithPhotoURLs:(NSArray *)photoURLsArray {
-    if ((self = [self init])) {
-        NSArray *photosArray = [IDMPhoto photosWithURLs:photoURLsArray];
-		_newPhotos = [[NSMutableArray alloc] initWithArray:photosArray];
-	}
-	return self;
-}
-
-- (id)initWithPhotoURLs:(NSArray *)photoURLsArray animatedFromView:(UIView*)view {
-    if ((self = [self init])) {
-        NSArray *photosArray = [IDMPhoto photosWithURLs:photoURLsArray];
-		_newPhotos = [[NSMutableArray alloc] initWithArray:photosArray];        
         _senderViewForAnimation = view;
 	}
 	return self;

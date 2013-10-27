@@ -8,6 +8,12 @@
 
 #import "Menu.h"
 
+#define USE_AFNETWORKING_IN_DEMO 1
+
+#if USE_AFNETWORKING_IN_DEMO
+#import "IDMPhoto+AFNetworking.h"
+#endif
+
 @implementation Menu
 
 #pragma mark - Initialization

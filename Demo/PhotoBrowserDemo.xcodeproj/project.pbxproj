@@ -22,6 +22,8 @@
 		4C6F97D814AF760500F8389A /* photo3m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F97D014AF760500F8389A /* photo3m.jpg */; };
 		4C6F97D914AF760500F8389A /* photo4l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F97D114AF760500F8389A /* photo4l.jpg */; };
 		4C6F97DA14AF760500F8389A /* photo4m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F97D214AF760500F8389A /* photo4m.jpg */; };
+		8DFA7A45181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA7A44181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.m */; };
+		8DFA7A48181D813B00759AA3 /* IDMPhoto+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA7A47181D813B00759AA3 /* IDMPhoto+AFNetworking.m */; };
 		D11CD1A5180C353F009320DD /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D11CD122180C353E009320DD /* AFHTTPRequestOperation.m */; };
 		D11CD1A6180C353F009320DD /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D11CD124180C353E009320DD /* AFHTTPRequestOperationManager.m */; };
 		D11CD1A7180C353F009320DD /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D11CD126180C353E009320DD /* AFHTTPSessionManager.m */; };
@@ -96,6 +98,10 @@
 		4C6F97D014AF760500F8389A /* photo3m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo3m.jpg; path = Photos/photo3m.jpg; sourceTree = "<group>"; };
 		4C6F97D114AF760500F8389A /* photo4l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo4l.jpg; path = Photos/photo4l.jpg; sourceTree = "<group>"; };
 		4C6F97D214AF760500F8389A /* photo4m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo4m.jpg; path = Photos/photo4m.jpg; sourceTree = "<group>"; };
+		8DFA7A43181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDMPhotoBrowser+AFNetworking.h"; sourceTree = "<group>"; };
+		8DFA7A44181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDMPhotoBrowser+AFNetworking.m"; sourceTree = "<group>"; };
+		8DFA7A46181D813B00759AA3 /* IDMPhoto+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDMPhoto+AFNetworking.h"; sourceTree = "<group>"; };
+		8DFA7A47181D813B00759AA3 /* IDMPhoto+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDMPhoto+AFNetworking.m"; sourceTree = "<group>"; };
 		D11464B61802FFC4005B7BC3 /* IDMPBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPBConstants.h; sourceTree = "<group>"; };
 		D11CD121180C353E009320DD /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		D11CD122180C353E009320DD /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -368,8 +374,12 @@
 				D11464B61802FFC4005B7BC3 /* IDMPBConstants.h */,
 				D1574950178DB94900B0211A /* IDMPhoto.h */,
 				D1574951178DB94900B0211A /* IDMPhoto.m */,
+				8DFA7A46181D813B00759AA3 /* IDMPhoto+AFNetworking.h */,
+				8DFA7A47181D813B00759AA3 /* IDMPhoto+AFNetworking.m */,
 				D1574953178DB94900B0211A /* IDMPhotoBrowser.h */,
 				D1574954178DB94900B0211A /* IDMPhotoBrowser.m */,
+				8DFA7A43181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.h */,
+				8DFA7A44181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.m */,
 				D1574955178DB94900B0211A /* IDMPhotoProtocol.h */,
 				D1574956178DB94900B0211A /* IDMTapDetectingImageView.h */,
 				D1574957178DB94900B0211A /* IDMTapDetectingImageView.m */,
@@ -541,6 +551,7 @@
 				D11CD1E8180C353F009320DD /* UIProgressView+AFNetworking.m in Sources */,
 				D1574965178DB94900B0211A /* DACircularProgressView.m in Sources */,
 				D11CD1A8180C353F009320DD /* AFNetworkReachabilityManager.m in Sources */,
+				8DFA7A48181D813B00759AA3 /* IDMPhoto+AFNetworking.m in Sources */,
 				D11CD1A5180C353F009320DD /* AFHTTPRequestOperation.m in Sources */,
 				D11CD1AB180C353F009320DD /* AFURLRequestSerialization.m in Sources */,
 				D11CD1AA180C353F009320DD /* AFURLConnectionOperation.m in Sources */,
@@ -559,6 +570,7 @@
 				D19D827517E8DDEC00A5859E /* DCFrameView.m in Sources */,
 				D11CD1A9180C353F009320DD /* AFSecurityPolicy.m in Sources */,
 				D19D827617E8DDEC00A5859E /* DCIntrospect.m in Sources */,
+				8DFA7A45181D813500759AA3 /* IDMPhotoBrowser+AFNetworking.m in Sources */,
 				D11CD1A6180C353F009320DD /* AFHTTPRequestOperationManager.m in Sources */,
 				D11CD1E7180C353F009320DD /* UIImageView+AFNetworking.m in Sources */,
 				D19D827717E8DDEC00A5859E /* DCStatusBarOverlay.m in Sources */,

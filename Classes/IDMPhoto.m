@@ -48,10 +48,6 @@ caption = _caption;
 	return [[IDMPhoto alloc] initWithFilePath:path];
 }
 
-+ (IDMPhoto *)photoWithURL:(NSURL *)url {
-	return [[IDMPhoto alloc] initWithURL:url];
-}
-
 + (NSArray *)photosWithImages:(NSArray *)imagesArray {
     NSMutableArray *photos = [NSMutableArray arrayWithCapacity:imagesArray.count];
     
@@ -78,24 +74,7 @@ caption = _caption;
     return photos;
 }
 
-+ (NSArray *)photosWithURLs:(NSArray *)urlsArray {
-    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:urlsArray.count];
-    
-    for (id url in urlsArray) {
-        if ([url isKindOfClass:[NSURL class]]) {
-            IDMPhoto *photo = [IDMPhoto photoWithURL:url];
-            [photos addObject:photo];
-        }
-        else if ([url isKindOfClass:[NSString class]]) {
-            IDMPhoto *photo = [IDMPhoto photoWithURL:[NSURL URLWithString:url]];
-            [photos addObject:photo];
-        }
-    }
-    
-    return photos;
-}
-
-#pragma mark NSObject
+#pragma mark Init
 
 - (id)initWithImage:(UIImage *)image {
 	if ((self = [super init])) {
@@ -107,13 +86,6 @@ caption = _caption;
 - (id)initWithFilePath:(NSString *)path {
 	if ((self = [super init])) {
 		_photoPath = [path copy];
-	}
-	return self;
-}
-
-- (id)initWithURL:(NSURL *)url {
-	if ((self = [super init])) {
-		_photoURL = [url copy];
 	}
 	return self;
 }

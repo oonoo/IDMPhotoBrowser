@@ -27,16 +27,13 @@ typedef void (^IDMProgressUpdateBlock)(CGFloat progress);
 // Class
 + (IDMPhoto *)photoWithImage:(UIImage *)image;
 + (IDMPhoto *)photoWithFilePath:(NSString *)path;
-+ (IDMPhoto *)photoWithURL:(NSURL *)url;
 
 + (NSArray *)photosWithImages:(NSArray *)imagesArray;
 + (NSArray *)photosWithFilePaths:(NSArray *)pathsArray;
-+ (NSArray *)photosWithURLs:(NSArray *)urlsArray;
 
 // Init
 - (id)initWithImage:(UIImage *)image;
 - (id)initWithFilePath:(NSString *)path;
-- (id)initWithURL:(NSURL *)url;
 
 @end
 
