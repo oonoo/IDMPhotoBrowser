@@ -1,22 +1,4 @@
 PODS:
-  - AFNetworking (2.0.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.0.1):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.0.1)
-  - AFNetworking/Security (2.0.1)
-  - AFNetworking/Serialization (2.0.1)
-  - AFNetworking/UIKit (2.0.1):
-    - AFNetworking/NSURLConnection
   - DACircularProgress (2.1.0)
   - SDWebImage (3.5.1):
     - SDWebImage/Core
@@ -24,13 +6,11 @@ PODS:
   - SVProgressHUD (0.9)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.0.1)
   - DACircularProgress (~> 2.1.0)
   - SDWebImage
   - SVProgressHUD (~> 0.9)
 
 SPEC CHECKSUMS:
-  AFNetworking: 867cd74266eeab923f249aa8b3d56899a67cc50e
   DACircularProgress: 8c8f20c8dffdd647fbf570ddecbc2b1b59da5888
   SDWebImage: a408b548a634b792372e07e753fc1079aff5032a
   SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
