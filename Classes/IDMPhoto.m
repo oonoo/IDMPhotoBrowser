@@ -140,7 +140,7 @@ caption = _caption;
             
             SDWebImageManager *manager = [SDWebImageManager sharedManager];
             [manager downloadWithURL:_photoURL
-                             options:0
+                             options:SDWebImageCacheMemoryOnly
                             progress:^(NSUInteger receivedSize, long long expectedSize)
              {
                  CGFloat progress = ((CGFloat)receivedSize)/((CGFloat)expectedSize);
